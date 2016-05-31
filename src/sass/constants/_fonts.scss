@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('../fonts/ClearSans-Bold.eot');
+  src: url('../fonts/ClearSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ClearSans-Bold.woff') format('woff'),
+    url('../fonts/ClearSans-Bold.ttf') format('truetype'),
+    url('../fonts/ClearSans-Bold.svg#ClearSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('../fonts/ClearSans.eot');
+  src: url('../fonts/ClearSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ClearSans.woff') format('woff'),
+    url('../fonts/ClearSans.ttf') format('truetype'),
+    url('../fonts/ClearSans.svg#ClearSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Code';
+  src: url('../fonts/Code-Bold.eot');
+  src: url('../fonts/Code-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code-Bold.woff') format('woff'),
+    url('../fonts/Code-Bold.ttf') format('truetype'),
+    url('../fonts/Code-Bold.svg#Code-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Code Pro';
+  src: url('../fonts/Code-Pro-Bold.eot');
+  src: url('../fonts/Code-Pro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Code-Pro-Bold.woff') format('woff'),
+    url('../fonts/Code-Pro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "awesome";
+  src:url("../fonts/awesome.eot");
+  src:url("../fonts/awesome.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/awesome.woff") format("woff"),
+    url("../fonts/awesome.ttf") format("truetype"),
+    url("../fonts/awesome.svg#awesome") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "awesome" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "awesome" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\61";
+}
+.icon-twitter:before {
+  content: "\62";
+}
+.icon-youtube:before {
+  content: "\63";
+}
+.icon-linkedin:before {
+  content: "\65";
+}
+.icon-instagrem:before {
+  content: "\66";
+}
+.icon-pinterest:before {
+  content: "\67";
+}

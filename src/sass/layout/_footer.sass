@@ -1,0 +1,64 @@
+#footer	
+	+clearfix
+	padding-top: 17px
+	margin-bottom: 20px
+	ul 
+		float: left
+		+breakpoint(1000px)
+			float: none 
+			display: block
+			overflow: hidden
+		li 
+			float: left
+			a 
+				font-size: 14px
+				line-height: 42px
+				display: inline-block
+				text-transform: uppercase
+				color: #9a9a9a
+				+transition(0.3s)
+				+breakpoint(767px)
+					font-size: 12px
+					line-height: 16px
+				&:hover
+					color: #60606e
+			&:after
+				content: "-"
+				color: #9a9a9a
+				margin: 0px 18px
+				+breakpoint(767px)
+					margin: 0 5px
+			&:last-child
+				&:after
+					display: none
+				
+	.footer-text
+		float: right
+		font-size: 14px
+		color: #9a9a9a
+		line-height: 42px
+		display: inline-block
+		text-transform: uppercase
+		+breakpoint(1000px)
+			float: none 
+			display: block
+		+breakpoint(767px)
+			font-size: 12px
+			line-height: 16px
+	.footer-socials
+		display: block
+		text-align: right
+		clear: both
+		a
+			color: #989898 
+			+transition(0.3s)
+			display: inline-block
+			margin: 14px 0px 0px 21px
+			&:hover
+				color: #60606e
+			+breakpoint(1000px)
+				margin: 14px 30px 0px 0px
+			+breakpoint(767px)
+				margin-top: 5px
+		+breakpoint(1000px)
+			text-align: left

@@ -1,0 +1,385 @@
+.all-content
+	background: image-url("bg1.jpg") top center no-repeat, image-url("bg2.jpg") bottom center no-repeat
+	+breakpoint($break-1200)
+		background-size: contain
+.main-content
+	+clearfix
+	margin-bottom: 120px
+	+breakpoint(767px)
+		margin-bottom: 45px
+	.logo
+		padding-top: 41px
+		display: inline-block
+		+transition(0.3s)
+		&:hover
+			+opacity(0.6)	
+	.design-agency
+		display: block
+		margin: auto
+		color: #60606e
+		max-width: 555px
+		width: 100%
+		margin-top: 154px
+		text-align: center
+		+breakpoint(767px)
+			margin-top: 20px
+		h4
+			font-size: 18px
+			line-height: 20px
+			display: inline-block
+			background: #f5e100
+			padding: 5px 15px
+			font-family: 'Code Pro'
+			font-weight: bold
+			font-style: normal
+		h3
+			font-size: 48px
+			line-height: 50px
+			display: block
+			text-transform: uppercase
+			border: 10px solid #60606e
+			padding: 18px 15px 12px
+			font-family: 'Code'
+			font-weight: bold
+			font-style: normal
+			+breakpoint(767px)
+				font-size: 30px
+		p
+			font-size: 21px
+			line-height: 24px
+			display: inline-block
+			padding: 0 30px
+			margin-top: 26px
+			+box-sizing(border-box)
+			+breakpoint(767px)
+				padding: 0 0
+				font-size: 18px
+
+	.where-order-site
+		float: right
+		max-width: 555px
+		margin: auto
+		color: #60606e
+		+breakpoint(767px)
+			float: left
+			max-width: 100%
+		h4
+			font-size: 30px
+			line-height: 34px
+			text-transform: uppercase
+			display: block
+			margin-top: 140px
+			padding: 4px 0
+			background: image-url("text-bg-box.png") left bottom no-repeat
+			margin-bottom: 11px
+			font-family: 'Clear Sans'
+			font-weight: bold
+			font-style: normal
+			+breakpoint(767px)
+				margin-top: 30px
+				font-size: 27px
+		p 
+			font-size: 16px
+			line-height: 30px
+			+breakpoint(767px)
+				font-size: 14px
+				line-height: 20px
+.services
+	text-align: center
+	+clearfix
+	position: relative
+	color: #60606e
+	+breakpoint(767px)
+		text-align: left
+	h4
+		font-size: 30px
+		line-height: 34px
+		display: inline-block
+		padding: 4px 30px
+		text-transform: uppercase
+		background: image-url("text-bg-box.png") left bottom no-repeat
+		margin-bottom: 14px
+		text-align: center
+		font-family: 'Clear Sans'
+		font-weight: bold
+		font-style: normal
+	p 
+		font-size: 14px
+		line-height: 24px
+		max-width: 750px
+		display: block
+		margin: auto
+		width: 100%
+		letter-spacing: 0px
+	.services-content
+		padding-top: 66px
+		+breakpoint($break-1200)
+			padding-top: 0
+	.services-content-text
+		max-width: 658px
+		width: 100%
+		text-align: left
+		color: #60606e
+		margin-left: -93px
+		position: relative
+		z-index: 5
+		+breakpoint($break-1200)
+			max-width: 100%
+			margin-left: 0
+			display: block
+		.services-content-text-item
+			+box-sizing(border-box)
+			text-align: left
+			display: inline-block
+			vertical-align: top
+			width: 230px
+			margin-top: 45px
+			margin-left: 93px
+			&:nth-child(3)
+				h5
+					padding: 6px 0 16px
+			&:nth-child(4)
+				margin-top: 54px
+				h5 
+					padding: 6px 0px 16px
+			+breakpoint($break-1200)
+				width: 24%
+				margin-left: 0
+				padding: 0px 20px 0px 0px
+				+box-sizing(border-box)
+			+breakpoint(1023px)
+				width: 49%				
+			+breakpoint(767px)
+				width: 100%
+				margin-top: 20px
+			h5
+				display: block
+				padding: 15px 0px
+				font-size: 18px
+				line-height: 22px
+				text-transform: uppercase
+				font-family: 'Clear Sans'
+				font-weight: bold
+				font-style: normal
+			ul
+				li
+					color: #999999
+					font-size: 14px
+					line-height: 16px
+					display: block
+					padding: 7px 0px
+					text-transform: uppercase
+	.services-content-img
+		position: absolute
+		right: 103px
+		top: 158px
+		z-index: 0
+		+breakpoint($break-1200)
+			position: initial
+			margin-top: 30px
+			display: block
+
+.portfolio
+	color: #60606e
+	text-align: center
+	+clearfix
+	padding-bottom: 30px
+	+breakpoint(767px)
+		text-align: left
+		padding-bottom: 10px
+	h4
+		font-size: 30px
+		line-height: 34px
+		display: inline-block
+		padding: 3px 39px
+		margin-bottom: 50px
+		margin-top: 56px
+		text-align: center
+		text-transform: uppercase
+		background: image-url("text-bg-box.png") left bottom no-repeat
+		font-family: 'Clear Sans'
+		font-weight: bold
+		font-style: normal
+		+breakpoint(767px)
+			margin-bottom: 10px
+			font-size: 28px
+	.portfolio-contauner
+		overflow: hidden
+		text-align: left
+	.portfolio-text
+		max-width: 263/1140*100%
+		display: inline-block
+		padding-top: 28px
+		+breakpoint($break-1200)
+			display: inline-block
+			max-width: 100%
+			padding-top: 0
+
+		h5
+			font-size: 26px
+			line-height: 34px
+			display: inline-block
+			text-align: left
+			text-transform: uppercase
+			padding-bottom: 39px
+			font-family: 'Clear Sans'
+			font-weight: normal
+			font-style: normal
+			+breakpoint($break-1200)
+				padding-bottom: 10px
+			+breakpoint(767px)
+				font-size: 20px
+				line-height: 22px
+				margin-bottom: 0
+		ul
+			text-align: left
+			li 
+				a 
+					font-size: 16px
+					line-height: 20px
+					padding: 1px 21px
+					display: inline-block
+					color: #60606e
+					font-family: 'Clear Sans'
+					font-weight: bold
+					font-style: normal
+					margin-top: 21px
+					text-transform: uppercase
+					+transition(0.3s)
+					+breakpoint(767px)
+						margin-top: 10px
+						font-size: 14px
+					&:hover
+						background: #f5e100
+						padding: 1px 21px 0px
+						font-weight: normal
+						font-size: 14px
+				&.active	
+					a
+						padding: 1px 21px 0px
+						background: #f5e100
+						font-weight: normal
+						font-size: 14px
+	.grid
+		width: 877/1140*100%
+		float: right
+		margin-top: 30px
+		+breakpoint($break-1200)
+			display: block
+			width: 100%
+		.item
+			// float: left
+			margin: 0px 0px 30/877*100% 30/877*100%
+			width: 787/3/877*100%
+			+breakpoint(767px)
+				width: 42%
+			+breakpoint(469px)
+				width: 100%
+				margin: 0
+				margin-bottom: 20px
+			&.hide
+				display: none !important
+.question
+	background: #60606e
+	padding-top: 38px
+	padding-bottom: 61px
+	+breakpoint(767px)
+		padding: 20px 0
+	.question-item
+		width: 575/1140*100%
+		display: inline-block
+		vertical-align: top
+		+breakpoint(767px)
+			width: 100%
+			display: block
+			margin-top: 0px
+		h4
+			color: #fff
+			font-size: 30px
+			line-height: 42px
+			margin-bottom: 27px
+			display: inline-block
+			font-family: 'Clear Sans'
+			font-weight: bold
+			font-style: normal
+			+breakpoint(767px)
+				font-size: 20px
+				line-height: 24px
+		a 
+			color: #60606e
+			background: #fff
+			font-size: 14px
+			color: #60606e
+			display: inline-block
+			padding: 17px 22px
+			+transition(0.3s)
+			font-family: 'Clear Sans'
+			font-weight: bold
+			font-style: normal
+			&:hover
+				background: #989898
+				color: #fff
+	.question-content
+		width: 555/1140*100%
+		display: inline-block
+		vertical-align: top
+		background: #fff
+		color: #60606e
+		+box-sizing(border-box)
+		padding: 13px 25px 24px
+		margin-top: 10px
+		+breakpoint(767px)
+			width: 100%
+			display: block
+			margin-top: 27px
+			padding: 10px 10px
+		h5
+			font-size: 24px
+			line-height: 36px
+			display: block
+			font-family: 'Clear Sans'
+			font-weight: bold
+			font-style: normal
+			margin-top: 4px
+			margin-left: 5px
+
+		p 
+			font-size: 16px
+			line-height: 20px
+			margin-left: 5px
+			color: #999999
+			display: inline-block
+			padding: 7px 0 19px
+		form 
+			position: relative
+			margin-bottom: 15px
+			padding-right: 126px
+			+breakpoint(767px)
+				padding-right: 115px
+		input[type="search"]
+			border: 1px solid #e5e5e5
+			width: 100%
+			color: #cdcdcd
+			font-size: 12px
+			line-height: 12px
+			padding: 19px 18px 15px
+			letter-spacing: -0.8px
+			text-transform: uppercase
+			outline: none
+			+breakpoint(767px)
+				font-size: 10px
+		input[type="submit"]
+			font-size: 14px
+			color: #fff
+			background: #f5e100
+			border: none
+			text-transform: uppercase
+			padding: 17px 25px
+			position: absolute
+			right: -5px
+			top: 0
+			cursor: pointer
+			z-index: 10
+			outline: none
+			+breakpoint(767px)
+				font-size: 12px
