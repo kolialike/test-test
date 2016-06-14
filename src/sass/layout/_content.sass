@@ -4,13 +4,15 @@
 		background-size: contain
 .main-content
 	+clearfix
-	margin-bottom: 120px
+	margin-bottom: 60px
 	+breakpoint(767px)
-		margin-bottom: 45px
+		margin-bottom: 20px
 	.logo
 		padding-top: 41px
 		display: inline-block
 		+transition(0.3s)
+		+breakpoint(767px)
+			padding-top: 20px
 		&:hover
 			+opacity(0.6)	
 	.design-agency
@@ -19,7 +21,7 @@
 		color: #60606e
 		max-width: 555px
 		width: 100%
-		margin-top: 154px
+		margin-top: 89px
 		text-align: center
 		+breakpoint(767px)
 			margin-top: 20px
@@ -44,6 +46,8 @@
 			font-style: normal
 			+breakpoint(767px)
 				font-size: 30px
+				padding: 2px 0
+				border: 5px solid #60606e
 		p
 			font-size: 21px
 			line-height: 24px
@@ -54,21 +58,22 @@
 			+breakpoint(767px)
 				padding: 0 0
 				font-size: 18px
+				margin-top: 10px
 
 	.where-order-site
 		float: right
-		max-width: 555px
 		margin: auto
 		color: #60606e
+		width: 50%
 		+breakpoint(767px)
 			float: left
-			max-width: 100%
+			width: 100%
 		h4
 			font-size: 30px
 			line-height: 34px
 			text-transform: uppercase
 			display: block
-			margin-top: 140px
+			margin-top: 69px
 			padding: 4px 0
 			background: image-url("text-bg-box.png") left bottom no-repeat
 			margin-bottom: 11px
@@ -76,7 +81,7 @@
 			font-weight: bold
 			font-style: normal
 			+breakpoint(767px)
-				margin-top: 30px
+				margin-top: 20px
 				font-size: 27px
 		p 
 			font-size: 16px
@@ -84,6 +89,25 @@
 			+breakpoint(767px)
 				font-size: 14px
 				line-height: 20px
+		strong
+			text-transform: uppercase
+			font-weight: 700
+	.where-order-site-img
+		float: left 
+		width: 55%
+		margin-left: -8%
+		+breakpoint(767px)
+			display: block
+			float: none
+			width: 100%
+			margin-left: 0
+		img 
+			display: block
+			width: 100%
+			max-width: 100%
+			margin-top: 70px
+			+breakpoint(767px)
+				margin-top: 20px
 .services
 	text-align: center
 	+clearfix
@@ -113,6 +137,7 @@
 		letter-spacing: 0px
 	.services-content
 		padding-top: 66px
+		position: relative
 		+breakpoint($break-1200)
 			padding-top: 0
 	.services-content-text
@@ -132,16 +157,20 @@
 			text-align: left
 			display: inline-block
 			vertical-align: top
-			width: 230px
-			margin-top: 45px
-			margin-left: 93px
+			width: 250px
+			margin-left: 75px
 			&:nth-child(3)
+				margin-top: -35px
 				h5
 					padding: 6px 0 16px
+				+breakpoint(767px)
+					margin-top: 10px
 			&:nth-child(4)
 				margin-top: 54px
 				h5 
-					padding: 6px 0px 16px
+					padding: 13px 0px 15px
+				+breakpoint(767px)
+					margin-top: 10px
 			+breakpoint($break-1200)
 				width: 24%
 				margin-left: 0
@@ -154,9 +183,9 @@
 				margin-top: 20px
 			h5
 				display: block
-				padding: 15px 0px
+				padding: 5px 0px
 				font-size: 18px
-				line-height: 22px
+				line-height: 24px
 				text-transform: uppercase
 				font-family: 'Clear Sans'
 				font-weight: bold
@@ -171,8 +200,8 @@
 					text-transform: uppercase
 	.services-content-img
 		position: absolute
-		right: 103px
-		top: 158px
+		right: -23px
+		top: 151px
 		z-index: 0
 		+breakpoint($break-1200)
 			position: initial
@@ -203,6 +232,7 @@
 		+breakpoint(767px)
 			margin-bottom: 10px
 			font-size: 28px
+			margin-top: 20px
 	.portfolio-contauner
 		overflow: hidden
 		text-align: left
@@ -279,6 +309,56 @@
 				margin-bottom: 20px
 			&.hide
 				display: none !important
+
+.swiper
+	text-align: center
+	padding-bottom: 55px
+	background: image-url("bg3.jpg")
+	h4
+		font-size: 30px
+		line-height: 34px
+		display: inline-block
+		padding: 3px 39px
+		margin-bottom: 50px
+		margin-top: 56px
+		text-align: center
+		text-transform: uppercase
+		background: image-url("text-bg-box.png") left bottom no-repeat
+		font-family: 'Clear Sans'
+		font-weight: bold
+		font-style: normal
+		color: #60606e
+		+breakpoint(767px)
+			margin-bottom: 30px
+			font-size: 28px
+	.swiper-container
+		text-align: left
+	.slider-img
+		float: left
+		margin-right: 38px
+		+breakpoint(767px)
+			float: none
+			display: block
+			text-align: center
+			margin-right: 0
+	.swiper-slide
+		padding: 0 48px
+		+box-sizing(border-box)
+		+breakpoint(767px)
+			padding: 0 25px
+		p 
+			font-weight: 600
+			color: #999999
+			line-height: 36px
+			font-size: 24px
+			margin-top: 85px
+			+breakpoint(767px)
+				display: block
+				text-align: center
+				margin-top: 10px
+				font-size: 18px
+				line-height: 22px
+
 .question
 	background: #60606e
 	padding-top: 38px
@@ -289,22 +369,26 @@
 		width: 575/1140*100%
 		display: inline-block
 		vertical-align: top
+		margin-top: 3px
 		+breakpoint(767px)
 			width: 100%
 			display: block
 			margin-top: 0px
-		h4
+		p
 			color: #fff
-			font-size: 30px
-			line-height: 42px
-			margin-bottom: 27px
+			font-size: 16px
+			line-height: 29px
+			margin-bottom: 32px
 			display: inline-block
 			font-family: 'Clear Sans'
 			font-weight: bold
 			font-style: normal
+			padding-right: 110px
+			+box-sizing(border-box)
 			+breakpoint(767px)
-				font-size: 20px
-				line-height: 24px
+				font-size: 16px
+				line-height: 18px
+				padding-right: 0
 		a 
 			color: #60606e
 			background: #fff
@@ -327,7 +411,7 @@
 		color: #60606e
 		+box-sizing(border-box)
 		padding: 13px 25px 24px
-		margin-top: 10px
+		margin-top: 12px
 		+breakpoint(767px)
 			width: 100%
 			display: block
@@ -381,5 +465,8 @@
 			cursor: pointer
 			z-index: 10
 			outline: none
+			+transition(0.2s)
+			&:hover
+				background: #a49b3b
 			+breakpoint(767px)
 				font-size: 12px
