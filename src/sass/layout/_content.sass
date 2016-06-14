@@ -1,5 +1,5 @@
 .all-content
-	background: image-url("bg1.jpg") top center no-repeat, image-url("bg2.jpg") bottom center no-repeat
+	background: image-url("bg1.jpg") top center no-repeat
 	+breakpoint($break-1200)
 		background-size: contain
 .main-content
@@ -211,10 +211,16 @@
 			display: block
 
 .portfolio
+	background: image-url("bg2.jpg") top center no-repeat
+	padding-top: 150px
+	margin-top: -170px
 	color: #60606e
 	text-align: center
+	background-color: #ebebeb
 	+clearfix
 	padding-bottom: 30px
+	+breakpoint($break-1023)
+		margin-top: -155px
 	+breakpoint(767px)
 		text-align: left
 		padding-bottom: 10px
