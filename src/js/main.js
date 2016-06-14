@@ -9,34 +9,31 @@ $(document).ready(function(){
 			queue: false, 
 			duration: 300 
 		}
-	}
-	var grid = $('.grid').masonry(options); 
-
+	};
+	var grid = $('.grid').imagesLoaded( function() {grid.masonry(options)});
 	var portfolioCategory = $(".portfolio-category");
-	portfolioCategory.on('click', 'li', function(event) {
-		event.preventDefault();
-		$(this).addClass('active').siblings().removeClass('active');
-		thisId = $(this).attr("data-web");
-		$(".item").removeClass('hide');
-		grid.masonry("destroy");
-		if(thisId == "all") {
-			grid.masonry(options);
-		} else {
-			$(".item:not(."+thisId+")").addClass('hide');
-			grid.masonry({
-				itemSelector: ".item."+thisId,
-				singleMode: false,
-				isResizable: true,
-				isAnimated: true,
-				animationOptions: { 
-					queue: false, 
-					duration: 300 
-				}
-			});
-		}
-
-	});
-
+		portfolioCategory.on('click', 'li', function(event) {
+			event.preventDefault();
+			$(this).addClass('active').siblings().removeClass('active');
+			thisId = $(this).attr("data-web");
+			$(".item").removeClass('hide');
+			grid.masonry("destroy");
+			if(thisId == "all") {
+				grid.masonry(options);
+			} else {
+				$(".item:not(."+thisId+")").addClass('hide');
+				grid.masonry({
+					itemSelector: ".item."+thisId,
+					singleMode: false,
+					isResizable: true,
+					isAnimated: true,
+					animationOptions: { 
+						queue: false, 
+						duration: 300 
+					}
+				});
+			}
+		});
 
 	var appendNumber = 4;
     var prependNumber = 1;
@@ -47,7 +44,9 @@ $(document).ready(function(){
         slidesPerView: 1,
         centeredSlides: true,
         paginationClickable: true,
-        initialSlide: 1
+        initialSlide: 1,
+        loop: true
+
     });
    
 });
