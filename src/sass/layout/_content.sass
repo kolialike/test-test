@@ -2,6 +2,8 @@
 	background: image-url("bg1.jpg") top center no-repeat
 	+breakpoint($break-1200)
 		background-size: contain
+	+breakpoint(1023px)
+		background-size: initial	
 .main-content
 	+clearfix
 	margin-bottom: 60px
@@ -13,6 +15,7 @@
 		+transition(0.3s)
 		+breakpoint(767px)
 			padding-top: 20px
+			margin-bottom: 30px
 		&:hover
 			+opacity(0.6)	
 	.design-agency
@@ -224,8 +227,8 @@
 	+breakpoint($break-1023)
 		margin-top: -155px
 	+breakpoint(767px)
-		text-align: left
 		padding-bottom: 10px
+		text-align: center
 	h4
 		font-size: 30px
 		line-height: 34px
@@ -243,9 +246,14 @@
 			margin-bottom: 10px
 			font-size: 28px
 			margin-top: 20px
+			display: inline-block
+			text-align: center
+			padding: 0 0 7px
 	.portfolio-contauner
 		overflow: hidden
 		text-align: left
+		+breakpoint(767px)
+			text-align: center
 	.portfolio-text
 		max-width: 263/1140*100%
 		display: inline-block
@@ -273,6 +281,8 @@
 				margin-bottom: 0
 		ul
 			text-align: left
+			+breakpoint(767px)
+				text-align: center
 			li 
 				a 
 					font-size: 16px
@@ -387,6 +397,7 @@
 			width: 100%
 			display: block
 			margin-top: 0px
+			text-align: center
 		p
 			color: #fff
 			font-size: 16px
@@ -396,6 +407,7 @@
 			font-family: 'Clear Sans'
 			font-weight: bold
 			font-style: normal
+			text-align: left
 			padding-right: 110px
 			+box-sizing(border-box)
 			+breakpoint(767px)
@@ -461,6 +473,7 @@
 			line-height: 12px
 			padding: 19px 18px 15px
 			letter-spacing: -0.8px
+			height: 48px
 			text-transform: uppercase
 			outline: none
 			+breakpoint(767px)
@@ -474,6 +487,7 @@
 			padding: 17px 25px
 			position: absolute
 			right: -5px
+			height: 48px
 			top: 0
 			cursor: pointer
 			z-index: 10
@@ -483,3 +497,4 @@
 				background: #a49b3b
 			+breakpoint(767px)
 				font-size: 12px
+				right: 0
